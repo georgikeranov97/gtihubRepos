@@ -21,7 +21,7 @@ class App extends React.Component {
           <Router>
               <Redirect from="/" to="repositories" />
               <Route path="/repositories" render={() => <Home value={this.state.searchValue} /> } />
-              <Route path="/issues/:repoFirst/:repoSecond" component={Issues} />
+              <Route path="/issues/:repoFullName" component={Issues} />
           </Router>
       </div>
     );

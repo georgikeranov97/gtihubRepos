@@ -7,7 +7,7 @@ class Header extends React.Component {
      }
     render() { 
         return ( 
-            <section>
+            <header>
                 <img className={classes.image} src={require("../Ellipse.png")} alt="header pic" />
     
                 <h1 className={classes.heading}>GITHUB REPO EXPLORER</h1>
@@ -20,7 +20,7 @@ class Header extends React.Component {
                 </div>
                 
                 <button className={classes.searchButton} onClick={() => this.props.onSearchValueChange(this.state.searchValue)}>Search</button>
-            </section>
+            </header>
          );
     }
 }

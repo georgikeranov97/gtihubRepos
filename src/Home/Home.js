@@ -49,7 +49,7 @@ class Home extends Component {
                                 <Link to="{elem.url}">{elem.url}</Link>
                             </Router>
                             <div className={classes.greaterThan}>
-                            <Link to={`/issues/${elem.fullName}`}>
+                            <Link to={`/issues/${encodeURIComponent(elem.fullName)}`}>
                                 <i className="fas fa-greater-than"></i>
                             </Link>
                         </div>
